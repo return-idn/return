@@ -17,7 +17,7 @@ class CreateCoinWithdrawalsTable extends Migration
             $table->id();
 
             $table->bigInteger('users_id');
-            $table->float('total');
+            $table->integer('total');
             $table->string('bank_address');
             $table->string('bank_name');
             $table->string('status')->default('PENDING');

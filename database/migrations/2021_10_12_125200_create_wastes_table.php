@@ -17,13 +17,13 @@ class CreateWastesTable extends Migration
             $table->id();
 
             $table->string('name');
-            $table->float('price');
+            $table->integer('price');
             $table->longText('description');
             $table->string('unit');
 
             $table->string('tags')->nullable();
 
-            $table->bigInteger('categories_id');
+            $table->integer('categories_id');
 
             $table->softDeletes();
             $table->timestamps();

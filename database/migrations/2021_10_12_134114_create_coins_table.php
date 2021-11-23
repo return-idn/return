@@ -17,7 +17,7 @@ class CreateCoinsTable extends Migration
             $table->id();
 
             $table->bigInteger('users_id');
-            $table->float('total');
+            $table->integer('total');
 
             $table->softDeletes();
             $table->timestamps();
