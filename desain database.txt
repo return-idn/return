@@ -1,0 +1,38 @@
+User
+1. username
+2. phone_number
+3. roles
+
+Kategori Sampah
+1. nama
+
+Sampah
+1. nama
+2. harga
+3. satuan
+4. deskripsi
+5. tags
+6. Kategori Sampah
+
+Galeri Sampah
+1. Sampah
+2. url
+
+bank Sampah
+1. nama
+2. alamat
+
+Transaksi
+1. User
+2. Bank Sampah
+2. alamat
+3. metode bayar
+4. total harga
+5. total penjemputan
+6. status
+
+Detail Transaksi
+1. User
+2. Produk
+3. Transaksi
+4. kuantitas
