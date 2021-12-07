@@ -23,8 +23,7 @@
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/fontawesome-all.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/swiper.css') }}" rel="stylesheet">
@@ -85,7 +84,7 @@
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h1 class="h1-large">Return</h1>
-                        <p class="p-large">Ubah Sampah Menjadi Uang</p>
+                        <p class="p-large">Ubah Sampah Jadi Uang</p>
                         <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Coming Soon</a>
                         <a class="btn-solid-lg secondary" href="#your-link"><i class="fab fa-google-play"></i>Coming
                             Soon</a>
@@ -155,13 +154,13 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="text-container">
-                        <h2>Ubah Sampah Menjadi Uang</h2>
+                        <h2>Ubah Sampah Jadi Uang</h2>
                         <p>Menerima berbagai macam sampah yang telah dikategorikan berdasarkan jenisnya.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="{{ asset('/images/Lainnya.PNG') }}" alt="alternative">
+                        <img class="img-fluid" src="{{ asset('/images/Lainnya.png') }}" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
