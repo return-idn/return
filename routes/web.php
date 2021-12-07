@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CoinWithdrawalController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WasteCategoryController;
@@ -27,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
 // })->name('dashboard');
-
+Route::get('/', [LandingPageController::class, 'index']);
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
     Route::name('dashboard.')->prefix('dashboard')->group(function () {
