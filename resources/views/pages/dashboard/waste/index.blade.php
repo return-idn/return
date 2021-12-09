@@ -12,11 +12,27 @@
                 ajax: {
                     url: '{!! url()->current() !!}',
                 },
-                columns: [
-                    { data: 'id', name: 'id', width: '5%'},
-                    { data: 'name', name: 'name' },
-                    { data: 'category.name', name: 'category.name' },
-                    { data: 'price', name: 'price' },
+                columns: [{
+                        data: 'id',
+                        name: 'id',
+                        width: '5%'
+                    },
+                    {
+                        data: 'name',
+                        name: 'name'
+                    },
+                    {
+                        data: 'category.name',
+                        name: 'category.name'
+                    },
+                    {
+                        data: 'unit',
+                        name: 'unit'
+                    },
+                    {
+                        data: 'price',
+                        name: 'price'
+                    },
                     {
                         data: 'action',
                         name: 'action',
@@ -32,8 +48,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="mb-10">
-                <a href="{{ route('dashboard.waste.create') }}"
-                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded shadow-lg">
+                <a href="{{ route('dashboard.waste.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded shadow-lg">
                     + Create Waste
                 </a>
             </div>
@@ -45,6 +60,7 @@
                                 <th>ID</th>
                                 <th>Nama</th>
                                 <th>Kategori</th>
+                                <th>Unit</th>
                                 <th>Harga</th>
                                 <th>Aksi</th>
                             </tr>
