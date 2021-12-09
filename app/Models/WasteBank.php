@@ -17,11 +17,17 @@ class WasteBank extends Model
      */
     protected $fillable = [
         'name',
-        'address'
+        'address',
+        'users_id'
     ];
 
     public function transactions()
     {
         return $this->hasMany(Transaction::class, 'waste_banks_id', 'id');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'users_id', 'id');
     }
 }

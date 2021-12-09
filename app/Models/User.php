@@ -76,4 +76,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Coin::class, 'users_id', 'id');
     }
+
+    public function wasteBank()
+    {
+        return $this->hasOne(WasteBank::class, 'users_id', 'id');
+    }
 }

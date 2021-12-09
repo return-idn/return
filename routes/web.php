@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WasteBankController;
 use App\Http\Controllers\WasteCategoryController;
 use App\Http\Controllers\WasteController;
 use App\Http\Controllers\WasteGalleryController;
@@ -37,6 +38,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
         Route::middleware(['admin'])->group(function () {
             Route::resource('waste', WasteController::class);
+            Route::resource('wasteBank', WasteBankController::class);
             Route::resource('category', WasteCategoryController::class);
             Route::resource('waste.gallery', WasteGalleryController::class)->shallow()->only([
                 'index', 'create', 'store', 'destroy'
