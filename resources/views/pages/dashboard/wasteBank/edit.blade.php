@@ -50,7 +50,7 @@
                             </label>
                             <select name="users_id" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name">
                                 <option value="{{ $item->users_id }}">{{
-                                    \App\Models\WasteBankCategory::find($item->users_id)->name }}</option>
+                                    \App\Models\User::find($item->users_id)->name }}</option>
                                 <option disabled>----</option>
                                 @foreach ($users as $user)
                                 <option value="{{ $user->id }}">{{ $user->name }}</option>
